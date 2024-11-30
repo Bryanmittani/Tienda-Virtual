@@ -124,3 +124,41 @@ section header h2 {
     width: auto;
     font-size: 1em;
 }
+
+/* Contact Section */
+#contact ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+#contact ul li {
+    margin: 10px 0;
+    font-size: 1em;
+}
+
+/* Footer */
+#footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    background: #2E7D32;
+    color: white;
+    border-radius: 8px;
+}
+
+#footer p {
+    font-size: 1em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #products .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product {
+        width: 90%;
+    }
+}
