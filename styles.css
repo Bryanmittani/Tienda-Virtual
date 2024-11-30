@@ -1,15 +1,23 @@
+/* Estilos generales */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
     margin: 0;
     padding: 0;
+    background-color: #f4f4f4;
 }
 
+/* Header */
 header {
-    background-color: #333;
+    background-image: url('images/header-background.jpg');
+    background-size: cover;
     color: white;
-    padding: 10px 0;
     text-align: center;
+    padding: 50px 0;
+}
+
+header h1 {
+    font-size: 3em;
+    margin: 0;
 }
 
 nav ul {
@@ -25,10 +33,39 @@ nav ul li {
 nav ul li a {
     color: white;
     text-decoration: none;
+    font-size: 1.2em;
 }
 
-main {
-    padding: 20px;
+/* Sección de bienvenida */
+.bienvenida {
+    text-align: center;
+    padding: 40px 0;
+    background-color: #333;
+    color: white;
+}
+
+.bienvenida h2 {
+    font-size: 2.5em;
+}
+
+.boton {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+}
+
+.boton:hover {
+    background-color: #0056b3;
+}
+
+/* Categorías */
+.categorias {
+    text-align: center;
+    margin-top: 40px;
 }
 
 .categorias ul {
@@ -37,11 +74,41 @@ main {
 }
 
 .categorias ul li {
-    margin: 10px 0;
+    margin: 10px;
+    font-size: 1.5em;
 }
 
-section {
-    margin-bottom: 40px;
+.categorias ul li a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.categorias ul li a:hover {
+    color: #0056b3;
+}
+
+/* Sección de productos */
+section h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-top: 30px;
+}
+
+.producto {
+    display: inline-block;
+    width: 30%;
+    margin: 20px 1.5%;
+    text-align: center;
+}
+
+.producto img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.producto img:hover {
+    transform: scale(1.05);
 }
 
 footer {
